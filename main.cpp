@@ -20,8 +20,8 @@ int main()
     for (i = 0; i < n; i++)
     {
         s[i] = (struct student *)malloc(sizeof(struct student));
-        s[i]->name = (char *)malloc(sizeof(char));
-        s[i]->address = (char *)malloc( sizeof(char));
+        s[i]->name = (char *)malloc(50*sizeof(char));
+        s[i]->address = (char *)malloc(100* sizeof(char));
 
         printf("Enter Details of Student %d\n", i + 1);
         printf("Enter Student Name: ");
